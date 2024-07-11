@@ -1,4 +1,26 @@
+.header-container{
+  width: 100%;
+  background-color: #101010;
+  display: inline-flex;
+  overflow: hidden;
+  color: #ffffff;
+}
+.header-icon{
+  border-radius: 50%;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  align-content: center;
+  margin: 1rem 0 1rem 2rem;
+}
+.header-icon-img{
+  width:50px;
+}
+
 .img-container{
   width: 65px;
   height: 65px;
+}
+.header-title{
+  margin: 1.5rem;
 }

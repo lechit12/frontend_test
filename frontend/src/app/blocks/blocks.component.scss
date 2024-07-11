@@ -1,0 +1,41 @@
+.blocks-container{
+  width: 100%;
+  background-color: #444343;
+  min-height: 30vh;
+  overflow: hidden;
+  color: #ffffff;
+
+}
+.blocks-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.blocks-header-h1{
+  margin-bottom: 0;
+}
+.block-sections{
+  margin-top: 3rem;
+}
+.text-container{
+  display: flex;
+  justify-content: center;
+
+}
+.long-text{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+ }
+.button-container{
+  display: flex;
+  gap: 1rem;
+}
+.block-text{
+  max-width: 50vh;
+}
+.button{
+  height: 7vh;
+  width: 7vw;
+}
