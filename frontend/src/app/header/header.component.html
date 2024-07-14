@@ -1,17 +1,18 @@
 <div class="header-container">
+  <a href="/">
 <div class="header-icon">
   <img (mouseout)="changeImage($event,false)"
        (mouseover)="changeImage($event,true)"
        alt="ikona html5"
        class="header-icon-img"
-       data-hover-src="assets/html5-orange.png"
-       data-original-src="assets/html5-black.png"
-       src="assets/html5-black.png"/>
+       data-hover-src="/assets/html5-orange.png"
+       data-original-src="/assets/html5-black.png"
+       src="/assets/html5-black.png"/>
   </div>
-
-  <p class="header-title">
+  </a>
+  <div class="header-title">
     <span>Zadanie <strong>rekrutacyjne</strong></span>
-  </p>
-
+    <div *ngIf="dane" class="dane">{{dane}}</div>
+  </div>
 </div>
 

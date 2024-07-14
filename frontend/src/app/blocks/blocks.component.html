@@ -8,24 +8,25 @@
     <div class="text-container">
       <p>BLOK PIERWSZY</p>
     </div>
-    <input name="options" ng-control="options" type="radio" value="1" >Opcja pierwsza<br>
-    <input name="options" ng-control="options" type="radio" value="1" >Opcja druga<br>
-    <input name="options" ng-control="options" type="radio" value="1" >Opcja losowa<br>
+    <input name="options" ng-control="options" type="radio" value="1"  [(ngModel)]="selectedOption">Opcja pierwsza<br>
+    <input name="options" ng-control="options" type="radio" value="2" [(ngModel)]="selectedOption">Opcja druga<br>
+    <input name="options" ng-control="options" type="radio" value="random" [(ngModel)]="selectedOption">Opcja losowa<br>
+    <div *ngIf="isOptionRequired" class="error-message">Pole jest wymagane</div>
   </div>
     <div class="block-buttons">
       <div class="text-container">
       <p>BLOK DRUGI</p>
       </div>
       <div class="button-container">
-      <button class="button">Zastąp</button>
-      <button class="button">Doklej</button>
+      <button class="button" (click)="replaceText()">Zastąp</button>
+      <button class="button" (click)="appendText()">Doklej</button>
       </div>
     </div>
     <div class="block-text">
       <div class="text-container">
       <p class="long-text-title">BLOK Z DŁUGĄ NAZWĄ KTÓRA SAMA SIĘ PRZYTNIE....</p></div>
-      <p class="long-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus laoreet cursus. Nunc aliquet tempor purus ac faucibus. Duis vulputate libero ac risus posuere sagittis. Cras ornare purus a sollicitudin pellentesque. Morbi sollicitudin tortor ipsum, et placerat ante aliquet ut. Praesent fringilla ante posuere risus egestas, quis pulvinar enim luctus. Vivamus sagittis eleifend turpis, sed nisi.</p>
-    </div>
+      <div *ngFor="let text of displayedTexts" [innerHTML]="text" class="long-text"></div>
+       </div>
   </div>
 </div>
 

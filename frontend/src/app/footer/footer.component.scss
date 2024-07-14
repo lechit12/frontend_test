@@ -11,16 +11,23 @@
 .css{
   margin:1rem 0 1rem 2rem;
   border: 2px solid #bebebe;
+  color:#7b7f88;
+  cursor:pointer;
+}
+.css:hover{
+  border: 2px solid #8e7049;
 }
 .button-show{
   background-color: #101010;
   border: 2px solid #bebebe;
   color: #ffffff;
   border-radius: 5px;
-  padding: 1rem 2rem;
+  padding: 0.75rem 4rem;
   cursor: pointer;
-  margin:1rem 2rem 1rem  0;
-
+  margin: 1rem 2rem 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .button-show:hover {
   background-color: #303030;
@@ -29,5 +36,17 @@
 .footer-title{
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color:#272a31;
 }
 
+.mat-mdc-menu-item:hover,.mat-mdc-menu-item:hover .mat-icon {
+  color: orange;
+  background-color: transparent !important;
+}
+.mat-menu-item {
+  display: flex;
+  align-items: center;
+}
+.mat-mdc-menu-item .mat-icon {
+  margin-right: 0;
+}

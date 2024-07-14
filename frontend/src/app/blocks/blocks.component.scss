@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .blocks-header-h1 {
   margin: 0;
@@ -33,7 +33,9 @@
 .long-text{
   color:#6d737e;
 }
-
+.error-message{
+  color:red;
+}
 
 .button-container {
   display: flex;

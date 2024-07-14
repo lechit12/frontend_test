@@ -1,11 +1,18 @@
 <div class="footer-container">
-  <p class="css">
+  <div class="css">
     <span>CSS <br>IS<br> AWESOME</span>
 
-  </p>
+  </div>
   <p class="footer-title">
-    <span>nabthat</span>
+    <span>&mdash;nabthat&mdash;</span>
   </p>
-  <button class="button-show">Pokaż</button>
+  <button class="button-show" mat-button [matMenuTriggerFor]="menu" (click)="toggle()">Pokaż <mat-icon>
+    {{arrowIcon}}</mat-icon></button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="resetSettings()"><mat-icon>keyboard_arrow_right</mat-icon> ZRESETUJ USTAWIENIA </button>
+    <button mat-menu-item (click)="showData()"><mat-icon>keyboard_arrow_right</mat-icon> POKAŻ DANE OSOBOWE</button>
+  </mat-menu>
+
 </div>
 
